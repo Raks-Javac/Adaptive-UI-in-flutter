@@ -1,4 +1,4 @@
-# adaptive_demo
+# Crafting Adaptive Ui in flutter
 
 A new Flutter project.
 
