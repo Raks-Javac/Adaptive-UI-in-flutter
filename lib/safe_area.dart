@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SafeAreaWidget extends StatelessWidget {
-  const SafeAreaWidget({
+class DashboardView extends StatelessWidget {
+  const DashboardView({
     super.key,
   });
 
@@ -11,6 +11,30 @@ class SafeAreaWidget extends StatelessWidget {
       body: SafeArea(
         child: FullScreen(),
       ),
+      bottomNavigationBar: HomeBottomNav(),
+    );
+  }
+}
+
+class HomeBottomNav extends StatelessWidget {
+  const HomeBottomNav({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return BottomNavigationBar(
+      items: const [
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.photo),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.settings),
+        ),
+      ],
     );
   }
 }
