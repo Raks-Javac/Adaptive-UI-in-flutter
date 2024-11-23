@@ -1,4 +1,4 @@
-import 'package:adaptive_demo/safe_area.dart';
+import 'package:adaptive_demo/dashboard_emp.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
